@@ -636,6 +636,10 @@ h3 { font-size: var(--text-h3); }
   .gallery-slide {
     height: 260px;
   }
+  .about-image {
+  aspect-ratio: 16/9;
+  max-width: 100%;
+}
 }
 /*ABOUT SECTION*/
 .about-section {
