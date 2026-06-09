@@ -638,16 +638,18 @@ h3 { font-size: var(--text-h3); }
   }
 
   .about-image {
-  aspect-ratio: 3/4;
-  max-width: 280px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  max-width: 250px;
   margin: 0 auto;
   }
 
   .about-image img {
-  object-fit: cover;
-  object-position: center 40%;
+    object-fit: cover;
+    object-position: center 30%;
+  }
 }
-}
+
 /*ABOUT SECTION*/
 .about-section {
   padding: var(--space-lg) var(--space-md);
