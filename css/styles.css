@@ -644,9 +644,9 @@ h3 { font-size: var(--text-h3); }
   }
 
   .about-image img {
-    object-fit: cover;
-    object-position: center top;
-  }
+  object-fit: cover;
+  object-position: center 20%;
+}
 }
 /*ABOUT SECTION*/
 .about-section {
