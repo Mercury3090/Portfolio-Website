@@ -50,4 +50,28 @@ function initGallery() {
     const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
     goToSlide(newIndex);
   });
+  //Touch support for mobile swipe.
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  track.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  track.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+
+    //Swipe left: go to next slide.
+    if (diff > 50) {
+      const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+      goToSlide(newIndex);
+    }
+
+    //Swipe right: go to previous slide.
+    if (diff < -50) {
+      const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+      goToSlide(newIndex);
+    }
+  });
 }

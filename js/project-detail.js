@@ -5,7 +5,7 @@ const projectsData = {
   1: {
     //Project 1 data.
     title: 'Infestation',
-    subtitle: 'A 2D whack-a-mole style game set in a hellscape — built solo in Unity.',
+    subtitle: 'A 2D whack-a-mole style game set in a hellscape. Built solo in Unity.',
     images: [
       //Actual Image.
       'images/projects/infestation.png',
